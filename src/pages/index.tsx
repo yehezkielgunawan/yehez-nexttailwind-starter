@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
+import ContainerWrapper from "@/layouts/Layout";
+
 const Home: NextPage = () => {
   return (
     <div>
@@ -10,9 +12,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1 className="text-3xl font-bold underline">Hello World, I&apos;m using Tailwind</h1>
-      </main>
+      <ContainerWrapper>
+        <h1 className="text-3xl font-bold underline">Testing</h1>
+      </ContainerWrapper>
     </div>
   );
 };
