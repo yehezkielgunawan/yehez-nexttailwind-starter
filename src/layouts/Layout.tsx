@@ -1,6 +1,6 @@
 import React from "react";
 
-const ContainerWrapper = ({ children }: { children: React.ReactNode }) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <section>
       <div className="layout-container">{children}</div>
@@ -8,4 +8,4 @@ const ContainerWrapper = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default ContainerWrapper;
+export default Layout;

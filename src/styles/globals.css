@@ -39,6 +39,6 @@
   .layout-container {
     /* 1100px */
     max-width: 64rem;
-    @apply mx-auto w-11/12;
+    @apply mx-auto mt-20 max-w-4xl px-2 md:px-1;
   }
 }
