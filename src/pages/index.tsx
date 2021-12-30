@@ -1,5 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Image from "next/image";
+import { AiFillGithub } from "react-icons/ai";
 
 import HeaderComponent from "@/components/HeaderComponent";
 import Layout from "@/layouts/Layout";
@@ -15,8 +17,79 @@ const Home: NextPage = () => {
 
       <HeaderComponent />
       <Layout>
-        <h1 className="text-3xl font-bold underline">Testing</h1>
-        <p>hai</p>
+        <main className="flex flex-col space-y-3">
+          <h1 className="text-3xl font-bold underline">Hello World!</h1>
+          <p className="bg-gray-200 rounded-lg text-sm md:text-lg">
+            This is just a template!
+          </p>
+          <div className="flex py-3 my-4 content-center justify-center">
+            <Image
+              src="https://assets.vercel.com/image/upload/v1607554385/repositories/next-js/next-logo.png"
+              alt="Next.jsLogo"
+              width={160}
+              height={160}
+            />
+          </div>
+          <div className="text-center my-4 content-center justify-center">
+            <code className="bg-gray-200 rounded-lg text-sm md:text-lg">
+              npx degit yehezkielgunawan/yehez-nexttailwind-starter [APP_NAME]
+            </code>
+            <h3>OR</h3>
+            <code className="bg-gray-200 rounded-lg text-sm md:text-lg">
+              npx create-next-app --example
+              https://github.com/yehezkielgunawan/yehez-nexttailwind-starter
+              [YOUR_APP_NAME]
+            </code>
+          </div>
+          <a
+            href="https://github.com/yehezkielgunawan/yehez-nexttailwind-starter/generate"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button
+              type="button"
+              className="py-2 px-4 border-2 border-teal-700 text-teal-800 hover:bg-teal-200 focus:ring-teal-500 focus:ring-offset-teal-200 w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
+            >
+              Use This Template
+            </button>
+          </a>
+          <div className="flex space-x-4 justify-center items-center">
+            <a
+              href="https://github.com/yehezkielgunawan/yehez-nexttailwind-starter"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="flex justify-center text-xl items-center bg-gray-200 p-2 rounded-lg font-semibold">
+                <AiFillGithub className="text-xl mr-1" />
+                Open in Github
+              </button>
+            </a>
+            <a
+              href="https://vercel.com/import/git?s=https://github.com/yehezkielgunawan/yehez-nexttailwind-starter"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image
+                src="https://vercel.com/button"
+                alt="Vercel Button"
+                width={100}
+                height={40}
+              />
+            </a>
+            <a
+              href="https://app.netlify.com/start/deploy?repository=https://github.com/yehezkielgunawan/yehez-nexttailwind-starter"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image
+                src="https://www.netlify.com/img/deploy/button.svg"
+                alt="Netlify Button"
+                width={200}
+                height={50}
+              />
+            </a>
+          </div>
+        </main>
       </Layout>
     </div>
   );
