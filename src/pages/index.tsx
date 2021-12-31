@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { AiFillGithub } from "react-icons/ai";
+import { SiNetlify, SiVercel } from "react-icons/si";
 
 import HeaderComponent from "@/components/HeaderComponent";
 import Layout from "@/layouts/Layout";
@@ -53,7 +54,7 @@ const Home: NextPage = () => {
               Use This Template
             </button>
           </a>
-          <div className="flex flex-wrap space-x-4 justify-center items-center">
+          <div className="flex flex-wrap gap-3 justify-center items-center">
             <a
               href="https://github.com/yehezkielgunawan/yehez-nexttailwind-starter"
               target="_blank"
@@ -61,7 +62,7 @@ const Home: NextPage = () => {
             >
               <button className="flex justify-center items-center text-xl bg-gray-200 p-2.5 rounded-lg font-semibold hover:bg-gray-100">
                 <AiFillGithub size={20} className="mr-1" />
-                Open in Github
+                Open In Github
               </button>
             </a>
             <a
@@ -69,24 +70,20 @@ const Home: NextPage = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <Image
-                src="https://vercel.com/button"
-                alt="Vercel Button"
-                width={100}
-                height={40}
-              />
+              <button className="flex justify-center items-center text-xl text-white bg-blue-600 p-2.5 rounded-lg font-semibold hover:bg-blue-400">
+                <SiVercel size={20} className="mr-1" />
+                Deploy To Vercel
+              </button>
             </a>
             <a
               href="https://app.netlify.com/start/deploy?repository=https://github.com/yehezkielgunawan/yehez-nexttailwind-starter"
               target="_blank"
               rel="noreferrer"
             >
-              <Image
-                src="https://www.netlify.com/img/deploy/button.svg"
-                alt="Netlify Button"
-                width={200}
-                height={50}
-              />
+              <button className="flex justify-center items-center text-xl text-white bg-sky-600 p-2.5 rounded-lg font-semibold hover:bg-sky-400">
+                <SiNetlify size={20} className="mr-1" />
+                Deploy To Netlify
+              </button>
             </a>
           </div>
         </main>

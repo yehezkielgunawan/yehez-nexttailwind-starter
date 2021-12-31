@@ -2,6 +2,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["assets.vercel.com", "vercel.com", "www.netlify.com"]
-  }
-}
+    domains: ["assets.vercel.com"],
+  },
+};
