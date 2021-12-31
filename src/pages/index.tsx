@@ -17,19 +17,19 @@ const Home: NextPage = () => {
 
       <HeaderComponent />
       <Layout>
-        <main className="flex flex-col space-y-3">
+        <main className="flex flex-col gap-3">
           <h1 className="text-3xl font-bold underline">Hello World!</h1>
           <p className="bg-gray-200 rounded-lg text-sm md:text-lg">
             This is just a template!
           </p>
-          <div className="flex py-3 my-4 content-center justify-center">
+          <figure className="flex py-3 my-4 content-center justify-center">
             <Image
               src="https://assets.vercel.com/image/upload/v1607554385/repositories/next-js/next-logo.png"
               alt="Next.jsLogo"
               width={160}
               height={160}
             />
-          </div>
+          </figure>
           <div className="text-center my-4 content-center justify-center">
             <code className="bg-gray-200 rounded-lg text-sm md:text-lg">
               npx degit yehezkielgunawan/yehez-nexttailwind-starter [APP_NAME]
@@ -53,13 +53,13 @@ const Home: NextPage = () => {
               Use This Template
             </button>
           </a>
-          <div className="flex space-x-4 justify-center items-center">
+          <div className="flex flex-wrap space-x-4 justify-center items-center">
             <a
               href="https://github.com/yehezkielgunawan/yehez-nexttailwind-starter"
               target="_blank"
               rel="noreferrer"
             >
-              <button className="flex justify-center text-xl items-center bg-gray-200 p-2 rounded-lg font-semibold">
+              <button className="flex justify-center text-xl items-center bg-gray-200 p-2 rounded-lg font-semibold hover:bg-gray-100">
                 <AiFillGithub className="text-xl mr-1" />
                 Open in Github
               </button>
