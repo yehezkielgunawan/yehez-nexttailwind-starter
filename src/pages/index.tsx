@@ -59,8 +59,8 @@ const Home: NextPage = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <button className="flex justify-center text-xl items-center bg-gray-200 p-2 rounded-lg font-semibold hover:bg-gray-100">
-                <AiFillGithub className="text-xl mr-1" />
+              <button className="flex justify-center items-center text-xl bg-gray-200 p-2.5 rounded-lg font-semibold hover:bg-gray-100">
+                <AiFillGithub size={20} className="mr-1" />
                 Open in Github
               </button>
             </a>
