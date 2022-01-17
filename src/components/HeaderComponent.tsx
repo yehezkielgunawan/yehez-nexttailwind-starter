@@ -18,8 +18,7 @@ const HeaderComponent = () => {
           className={clsx(
             "p-2.5 rounded-md focus:outline-none",
             "border border-gray-900 dark:border-gray-600",
-            "dark:hover:border-primary-300 dark:hover:text-primary-300 hover:text-primary-300 hover:border-primary-300",
-            "dark:focus-visible:border-primary-300 dark:focus-visible:text-primary-300 focus-visible:text-primary-300 focus-visible:border-primary-300"
+            "hover:bg-gray-400"
           )}
           onClick={() => handleChangeTheme()}
         >
