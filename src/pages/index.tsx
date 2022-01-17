@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       <Layout>
         <main className="flex flex-col gap-3">
           <h1 className="text-3xl font-bold underline">Hello World!</h1>
-          <p className="bg-gray-200 rounded-lg text-sm md:text-lg">
+          <p className="bg-gray-200 dark:bg-gray-700 px-1 rounded-lg text-sm md:text-lg">
             This is just a template!
           </p>
           <figure className="flex py-3 my-4 content-center justify-center">
@@ -32,11 +32,11 @@ const Home: NextPage = () => {
             />
           </figure>
           <div className="text-center my-4 content-center justify-center">
-            <code className="bg-gray-200 rounded-lg text-sm md:text-lg">
+            <code className="bg-gray-200 dark:bg-gray-700 rounded-lg text-sm md:text-lg">
               npx degit yehezkielgunawan/yehez-nexttailwind-starter [APP_NAME]
             </code>
             <h3>OR</h3>
-            <code className="bg-gray-200 rounded-lg text-sm md:text-lg">
+            <code className="bg-gray-200 dark:bg-gray-700 rounded-lg text-sm md:text-lg">
               npx create-next-app --example
               https://github.com/yehezkielgunawan/yehez-nexttailwind-starter
               [YOUR_APP_NAME]
@@ -49,7 +49,7 @@ const Home: NextPage = () => {
           >
             <button
               type="button"
-              className="py-2 px-4 border-2 border-teal-700 text-teal-800 hover:bg-teal-200 focus:ring-teal-500 focus:ring-offset-teal-200 w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
+              className="py-2 px-4 border-2 border-teal-700 dark:border-teal-300 text-teal-800 dark:text-teal-300 hover:bg-teal-200 dark:hover:bg-teal-500 focus:ring-teal-500 focus:ring-offset-teal-200 w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
             >
               Use This Template
             </button>
@@ -60,7 +60,7 @@ const Home: NextPage = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <button className="flex justify-center items-center text-xl bg-gray-200 p-2.5 rounded-lg font-semibold hover:bg-gray-100">
+              <button className="flex justify-center items-center text-xl bg-gray-200 dark:bg-gray-700 p-2.5 rounded-lg font-semibold hover:bg-gray-100 dark:hover:bg-gray-500">
                 <AiFillGithub size={20} className="mr-1" />
                 Open In Github
               </button>
