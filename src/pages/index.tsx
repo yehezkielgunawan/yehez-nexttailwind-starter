@@ -29,7 +29,7 @@ const Home: NextPage = () => {
           >
             This is just a template!
           </p>
-          <figure className="flex py-3 my-4 content-center justify-center">
+          <figure className="flex animate-bounce py-3 my-4 content-center justify-center">
             <Image
               src="https://assets.vercel.com/image/upload/v1607554385/repositories/next-js/next-logo.png"
               alt="Next.jsLogo"
@@ -87,8 +87,8 @@ const Home: NextPage = () => {
               <button
                 className={clsx(
                   "flex justify-center items-center",
-                  "text-xl bg-gray-200 dark:bg-gray-700",
-                  "p-2.5 rounded-lg font-semibold",
+                  "text-lg md:text-xl bg-gray-200 dark:bg-gray-700",
+                  "p-1 md:p-2.5 rounded-lg font-semibold",
                   "hover:bg-gray-100 dark:hover:bg-gray-500"
                 )}
               >
@@ -103,8 +103,9 @@ const Home: NextPage = () => {
             >
               <button
                 className={clsx(
-                  "flex justify-center items-center text-xl text-white bg-blue-600",
-                  "p-2.5 rounded-lg font-semibold hover:bg-blue-400"
+                  "flex justify-center items-center  bg-blue-600",
+                  "rounded-lg font-semibold hover:bg-blue-400",
+                  "text-lg md:text-xl text-white p-1 md:p-2.5"
                 )}
               >
                 <SiVercel size={20} className="mr-1" />
@@ -118,8 +119,9 @@ const Home: NextPage = () => {
             >
               <button
                 className={clsx(
-                  "flex justify-center items-center text-xl text-white bg-sky-600 p-2.5",
-                  "rounded-lg font-semibold hover:bg-sky-400"
+                  "flex justify-center items-center  bg-sky-600",
+                  "rounded-lg font-semibold hover:bg-sky-400",
+                  "text-lg md:text-xl text-white p-1 md:p-2.5"
                 )}
               >
                 <SiNetlify size={20} className="mr-1" />
