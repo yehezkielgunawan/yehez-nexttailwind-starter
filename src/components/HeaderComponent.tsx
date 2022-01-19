@@ -22,8 +22,8 @@ const HeaderComponent = () => {
         <button
           className={clsx(
             "p-2.5 rounded-md focus:outline-none",
-            "border border-gray-900 dark:border-gray-600",
-            "hover:bg-gray-400"
+            "bg-slate-300 dark:bg-slate-500",
+            "hover:border-black hover:border dark:hover:border-gray-200"
           )}
           onClick={() => handleChangeTheme()}
         >
