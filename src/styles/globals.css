@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer base {
   /* inter var - latin */
   @font-face {
@@ -39,6 +37,6 @@
 
   .layout-container {
     max-width: 64rem;
-    @apply mx-auto mt-20 max-w-4xl px-2 md:px-1;
+    @apply mx-auto pt-20 max-w-4xl px-2 md:px-1;
   }
 }

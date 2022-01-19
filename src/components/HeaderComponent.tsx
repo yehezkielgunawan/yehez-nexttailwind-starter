@@ -12,7 +12,12 @@ const HeaderComponent = () => {
 
   return (
     <header className="fixed top-0 z-50 bg-gray-200 dark:bg-gray-800 w-full p-1 opacity-90">
-      <div className="layout flex justify-between items-center h-14 max-w-4xl mx-auto px-2 md:px-1">
+      <div
+        className={clsx(
+          "layout flex justify-between items-center",
+          "h-14 max-w-4xl mx-auto px-2 md:px-1"
+        )}
+      >
         <h5 className="font-bold text-black dark:text-white">yehezgun.com</h5>
         <button
           className={clsx(
