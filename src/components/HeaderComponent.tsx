@@ -11,7 +11,7 @@ const HeaderComponent = () => {
   };
 
   return (
-    <header className="fixed top-0 z-50 bg-gray-200 dark:bg-gray-800 w-full p-1 opacity-90">
+    <header className="fixed top-0 z-50 dark:bg-gray-800 w-full p-0.5 opacity-90">
       <div
         className={clsx(
           "layout flex justify-between items-center",
@@ -22,7 +22,7 @@ const HeaderComponent = () => {
         <button
           className={clsx(
             "p-2.5 rounded-md focus:outline-none",
-            "bg-slate-300 dark:bg-slate-500",
+            "bg-slate-200 dark:bg-slate-500",
             "hover:border-black hover:border dark:hover:border-gray-200"
           )}
           onClick={() => handleChangeTheme()}
