@@ -8,7 +8,7 @@ import defaultSEOConfig from "../../next-seo.config";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem={true}>
       <Head>
         <meta
           name="viewport"
