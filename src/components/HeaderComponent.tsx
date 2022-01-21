@@ -1,17 +1,24 @@
 import clsx from "clsx";
 import { useTheme } from "next-themes";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BiMoon, BiSun } from "react-icons/bi";
 
 const HeaderComponent = () => {
   const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState<boolean>(false);
 
   const handleChangeTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
+    return setTheme(theme === "light" ? "dark" : "light");
   };
 
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
   return (
-    <header className="fixed top-0 z-50 dark:bg-gray-800 w-full p-0.5 opacity-90">
+    <header className="fixed top-0 z-50 bg-white dark:bg-gray-800 w-full p-0.5 opacity-90">
       <div
         className={clsx(
           "layout flex justify-between items-center",
@@ -27,7 +34,7 @@ const HeaderComponent = () => {
           )}
           onClick={() => handleChangeTheme()}
         >
-          {theme === "light" ? <BiSun size={20} /> : <BiMoon size={20} />}
+          {theme === "light" ? <BiMoon size={20} /> : <BiSun size={20} />}
         </button>
       </div>
     </header>

@@ -6,12 +6,9 @@ import Head from "next/head";
 
 import defaultSEOConfig from "../../next-seo.config";
 
-import FooterComponent from "@/components/FooterComponent";
-import HeaderComponent from "@/components/HeaderComponent";
-
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="system">
+    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
       <Head>
         <meta
           name="viewport"
@@ -19,9 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
       </Head>
       <DefaultSeo {...defaultSEOConfig} />
-      <HeaderComponent />
       <Component {...pageProps} />
-      <FooterComponent />
     </ThemeProvider>
   );
 }
