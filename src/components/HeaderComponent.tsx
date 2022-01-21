@@ -25,7 +25,7 @@ const HeaderComponent = () => {
           "h-14 max-w-4xl mx-auto px-2 md:px-1"
         )}
       >
-        <h5 className="font-bold text-black dark:text-white">yehezgun.com {resolvedTheme}</h5>
+        <h5 className="font-bold text-black dark:text-white">yehezgun.com</h5>
         <button
           className={clsx(
             "p-2.5 rounded-md focus:outline-none",
@@ -34,7 +34,11 @@ const HeaderComponent = () => {
           )}
           onClick={() => handleChangeTheme()}
         >
-          {resolvedTheme === "light" ? <BiMoon size={20} /> : <BiSun size={20} />}
+          {resolvedTheme === "light" ? (
+            <BiMoon size={20} />
+          ) : (
+            <BiSun size={20} />
+          )}
         </button>
       </div>
     </header>
