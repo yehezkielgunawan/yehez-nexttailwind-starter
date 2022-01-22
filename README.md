@@ -1,34 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Yehez-NextTailwind-Starter
 
-## Getting Started
+![yehez-nexttailwind-starter](https://socialify.git.ci/yehezkielgunawan/yehez-nexttailwind-starter/image?description=1&font=Inter&logo=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Fv1607554385%2Frepositories%2Fnext-js%2Fnext-logo.png&owner=1&pattern=Formal%20Invitation&theme=Dark)
 
-First, run the development server:
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https://github.com/yehezkielgunawan/yehez-nexttailwind-starter) [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/yehezkielgunawan/yehez-nexttailwind-starter)
 
-```bash
-npm run dev
-# or
-yarn dev
+[![forthebadge](https://res.cloudinary.com/yehez/image/upload/v1635325228/made-by-typescript_mz1tue.svg)](https://forthebadge.com)
+
+This is a Next JS (Typescript) + Tailwind CSS personalized template. Live demo can be accessed at [yehez-nexttailwind-starter.yehezgun.com](https://yehez-nexttailwind-starter.yehezgun.com/). Actually, I made this for myself so I don't need to waste my time overthinking about the config and setup and focusing on the development.
+
+But if you also find this template is useful, you also can use it. And of course, I'm open to any feedback. You can fork or clone this repo and make a PR here if you have some idea.
+
+## ⚡ What's included here?
+
+- Toolings for linting, formatting, and conventions configured.
+  `eslint`, `prettier`, `husky`, & `lint-staged.`
+- ✨Basic responsive layout configuration (using Chakra UI media query)
+- SEO Optimization (using next-SEO)
+- Now using Next.js 12 with Rust Compiler Minification enabled (you can disable it at next.config.js)
+
+## How to use it?
+
+- You can open [yehez-nexttailwind-starter.yehezgun.com](https://yehez-nexttailwind-starter.yehezgun.com) and click `Use this template button (**_Don't forget to log in to your Github account_**).
+- Or you can clone this repo using `degit` in your terminal. Don't forget to install the needed dependencies using `npm install` or `yarn`.
+
+```
+npx degit yehezkielgunawan/yehez-nexttailwind-starter <YOUR_APP_NAME>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Or you also can easily use this template by running:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```
+npx create-next-app --example https://github.com/yehezkielgunawan/yehez-nexttailwind-starter <YOUR_APP_NAME>
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- Then run the local server using `yarn dev` or `npm run dev`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## References
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Tailwind CSS Official Docs](https://tailwindcss.com/)
+- [https://github.com/theodorusclarence/ts-nextjs-tailwind-starter](https://github.com/theodorusclarence/ts-nextjs-tailwind-starter) - Theodorus Clarence's Next-Tailwind Template as my main reference
