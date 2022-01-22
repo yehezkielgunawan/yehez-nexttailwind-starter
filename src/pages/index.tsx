@@ -23,8 +23,8 @@ const Home: NextPage = () => {
           <Image
             src="https://assets.vercel.com/image/upload/v1607554385/repositories/next-js/next-logo.png"
             alt="Next.jsLogo"
-            width={160}
-            height={160}
+            width={120}
+            height={120}
           />
         </figure>
         <div className="text-center my-4 content-center justify-center">
