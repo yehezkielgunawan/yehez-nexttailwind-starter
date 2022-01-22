@@ -17,7 +17,8 @@ const Home: NextPage = () => {
             "px-1 rounded-lg text-sm md:text-lg"
           )}
         >
-          This is just a template!
+          This is just a starter template, made using Next.js + Typescript +
+          Tailwind CSS.
         </p>
         <figure className="flex animate-bounce py-3 my-4 content-center justify-center">
           <Image
