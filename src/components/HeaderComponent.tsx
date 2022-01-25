@@ -18,19 +18,19 @@ const HeaderComponent = () => {
   if (!mounted) return null;
 
   return (
-    <header className="fixed top-0 z-50 bg-white dark:bg-gray-800 w-full p-0.5 opacity-90">
+    <header className="fixed top-0 z-50 w-full bg-white p-0.5 opacity-90 dark:bg-gray-800">
       <div
         className={clsx(
-          "layout flex justify-between items-center",
-          "h-14 max-w-4xl mx-auto px-2 md:px-1"
+          "layout flex items-center justify-between",
+          "mx-auto h-14 max-w-4xl px-2 md:px-1"
         )}
       >
         <h5 className="font-bold text-black dark:text-white">yehezgun.com</h5>
         <button
           className={clsx(
-            "p-2.5 rounded-md focus:outline-none",
+            "rounded-md p-2.5 focus:outline-none",
             "bg-slate-200 dark:bg-slate-500",
-            "hover:border-black hover:border dark:hover:border-gray-200"
+            "hover:border hover:border-black dark:hover:border-gray-200"
           )}
           onClick={() => handleChangeTheme()}
         >

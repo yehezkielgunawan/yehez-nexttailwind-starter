@@ -14,13 +14,13 @@ const Home: NextPage = () => {
         <p
           className={clsx(
             "bg-gray-200 dark:bg-gray-700",
-            "px-1 rounded-lg text-sm md:text-lg"
+            "rounded-lg px-1 text-sm md:text-lg"
           )}
         >
           This is just a starter template, made using Next.js + Typescript +
           Tailwind CSS.
         </p>
-        <figure className="flex animate-bounce py-3 my-4 content-center justify-center">
+        <figure className="my-4 flex animate-bounce content-center justify-center py-3">
           <Image
             src="https://assets.vercel.com/image/upload/v1607554385/repositories/next-js/next-logo.png"
             alt="Next.jsLogo"
@@ -28,7 +28,7 @@ const Home: NextPage = () => {
             height={120}
           />
         </figure>
-        <div className="text-center my-4 content-center justify-center">
+        <div className="my-4 content-center justify-center text-center">
           <code
             className={clsx(
               "bg-gray-200 dark:bg-gray-700",
@@ -61,15 +61,15 @@ const Home: NextPage = () => {
               "border-2 border-teal-700 dark:border-teal-400",
               "text-teal-800 dark:text-teal-300",
               "hover:bg-teal-200 dark:hover:bg-teal-600",
-              "focus:ring-teal-500 focus:ring-offset-teal-200 w-full transition ease-in duration-200",
+              "w-full transition duration-200 ease-in focus:ring-teal-500 focus:ring-offset-teal-200",
               "text-center text-base font-semibold",
-              "shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
+              "rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2"
             )}
           >
             Use This Template
           </button>
         </a>
-        <div className="flex flex-wrap gap-3 justify-center items-center">
+        <div className="flex flex-wrap items-center justify-center gap-3">
           <a
             href="https://github.com/yehezkielgunawan/yehez-nexttailwind-starter"
             target="_blank"
@@ -77,9 +77,9 @@ const Home: NextPage = () => {
           >
             <button
               className={clsx(
-                "flex justify-center items-center",
-                "text-lg md:text-xl bg-gray-200 dark:bg-gray-700",
-                "p-1 md:p-2.5 rounded-lg font-semibold",
+                "flex items-center justify-center",
+                "bg-gray-200 text-lg dark:bg-gray-700 md:text-xl",
+                "rounded-lg p-1 font-semibold md:p-2.5",
                 "hover:bg-gray-100 dark:hover:bg-gray-500"
               )}
             >
@@ -94,9 +94,9 @@ const Home: NextPage = () => {
           >
             <button
               className={clsx(
-                "flex justify-center items-center  bg-blue-600",
+                "flex items-center justify-center  bg-blue-600",
                 "rounded-lg font-semibold hover:bg-blue-400",
-                "text-lg md:text-xl text-white p-1 md:p-2.5"
+                "p-1 text-lg text-white md:p-2.5 md:text-xl"
               )}
             >
               <SiVercel size={20} className="mr-1" />
@@ -110,9 +110,9 @@ const Home: NextPage = () => {
           >
             <button
               className={clsx(
-                "flex justify-center items-center  bg-sky-600",
+                "flex items-center justify-center  bg-sky-600",
                 "rounded-lg font-semibold hover:bg-sky-400",
-                "text-lg md:text-xl text-white p-1 md:p-2.5"
+                "p-1 text-lg text-white md:p-2.5 md:text-xl"
               )}
             >
               <SiNetlify size={20} className="mr-1" />
