@@ -6,7 +6,7 @@
 
 [![forthebadge](https://res.cloudinary.com/yehez/image/upload/v1635325228/made-by-typescript_mz1tue.svg)](https://forthebadge.com)
 
-This is a Next JS (Typescript) + Tailwind CSS personalized template. Live demo can be accessed at [yehez-nexttailwind-starter.yehezgun.com](https://yehez-nexttailwind-starter.yehezgun.com/). Actually, I made this for myself so I don't need to waste my time overthinking about the config and setup and focusing on the development.
+This is a Next JS (Typescript) + Tailwind CSS personalized template. Live demo can be accessed at [nexttw-starter.yehezgun.com](https://nexttw-starter.yehezgun.com/). Actually, I made this for myself so I don't need to waste my time overthinking about the config and setup and focusing on the development.
 
 But if you also find this template is useful, you also can use it. And of course, I'm open to any feedback. You can fork or clone this repo and make a PR here if you have some idea.
 
@@ -20,7 +20,7 @@ But if you also find this template is useful, you also can use it. And of course
 
 ## How to use it?
 
-- You can open [yehez-nexttailwind-starter.yehezgun.com](https://yehez-nexttailwind-starter.yehezgun.com) and click `Use this template button (**_Don't forget to log in to your Github account_**).
+- You can open [nexttw-starter.yehezgun.com](https://nexttw-starter.yehezgun.com) and click `Use this template button (**_Don't forget to log in to your Github account_**).
 - Or you can clone this repo using `degit` in your terminal. Don't forget to install the needed dependencies using `npm install` or `yarn`.
 
 ```
