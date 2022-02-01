@@ -25,7 +25,7 @@ const HeaderComponent = () => {
           "mx-auto h-14 max-w-4xl px-2 md:px-1"
         )}
       >
-        <h5 className="font-bold text-black dark:text-white">yehezgun.com</h5>
+        <h5 className="font-bold text-black dark:text-white">yehez-nexttailwind-starter</h5>
         <button
           className={clsx(
             "rounded-md p-2.5 focus:outline-none",

@@ -26,8 +26,8 @@ const RegularLink = ({
       <a
         href={href}
         target="_blank"
-        rel="noreferrer"
-        className={clsx("cursor-ne-resize", className)}
+        rel="noopener noreferrer"
+        className={clsx("cursor-newtab", className)}
       >
         {children}
       </a>
