@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import type { NextPage } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { AiFillGithub } from "react-icons/ai";
 import { SiNetlify, SiVercel } from "react-icons/si";
 
@@ -10,7 +11,7 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <main className="flex flex-col gap-3">
-        <h1 className="text-3xl font-bold underline">Hello World!</h1>
+        <h1 className="underline">Hello World!</h1>
         <p
           className={clsx(
             "bg-gray-200 dark:bg-gray-700",
@@ -20,7 +21,7 @@ const Home: NextPage = () => {
           This is just a starter template, made using Next.js + Typescript +
           Tailwind CSS.
         </p>
-        <figure className="my-4 flex animate-bounce content-center justify-center py-3">
+        <figure className="my-4 flex animate-spin content-center justify-center py-3">
           <Image
             src="https://assets.vercel.com/image/upload/v1607554385/repositories/next-js/next-logo.png"
             alt="Next.jsLogo"
@@ -69,6 +70,22 @@ const Home: NextPage = () => {
             Use This Template
           </button>
         </a>
+        <Link href="/components" passHref>
+          <button
+            type="button"
+            className={clsx(
+              "py-2 px-4",
+              "border-2 border-black dark:border-white",
+              "text-black dark:text-white",
+              "hover:bg-gray-400 dark:hover:bg-gray-700",
+              "w-full transition duration-200 ease-in focus:ring-gray-500 focus:ring-offset-gray-200",
+              "text-center text-base font-semibold",
+              "rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2"
+            )}
+          >
+            See Components
+          </button>
+        </Link>
         <div className="flex flex-wrap items-center justify-center gap-3">
           <a
             href="https://github.com/yehezkielgunawan/yehez-nexttailwind-starter"
