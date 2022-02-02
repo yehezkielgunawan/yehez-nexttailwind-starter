@@ -1,6 +1,6 @@
 import React from "react";
 
-import RegularLink from "@/components/links/RegularLink";
+import UnstyledLink from "@/components/links/UnstyledLink";
 import Layout from "@/layouts/Layout";
 
 const Components = () => {
@@ -10,8 +10,8 @@ const Components = () => {
         <h1>Reusable Components</h1>
         <h3>Regular Link</h3>
         <div className="flex flex-row gap-3">
-          <RegularLink href="/">Internal Link</RegularLink>
-          <RegularLink href="https://yehezgun.com">External Link</RegularLink>
+          <UnstyledLink href="/">Internal Link</UnstyledLink>
+          <UnstyledLink href="https://yehezgun.com">External Link</UnstyledLink>
         </div>
       </main>
     </Layout>
