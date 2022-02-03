@@ -13,6 +13,9 @@ const Components = () => {
     <Layout>
       <main className="min-h-screen py-10">
         <h1>Reusable Components</h1>
+        <ArrowLink href="/" direction="left" className="my-2">
+          Go Back
+        </ArrowLink>
         <ol className="mt-8 space-y-4">
           <li className="space-y-1">
             <h3>Regular Link</h3>
