@@ -1,5 +1,6 @@
 import React from "react";
 
+import Button from "@/components/buttons/Button";
 import ArrowLink from "@/components/links/ArrowLink";
 import PrimaryLink from "@/components/links/PrimaryLink";
 import UnderlineLink from "@/components/links/UnderlineLink";
@@ -56,6 +57,50 @@ const Components = () => {
               >
                 Polymorphism
               </ArrowLink>
+            </div>
+          </li>
+          <li className="space-y-1">
+            <h3>Button Component</h3>
+            <div className="flex flex-wrap gap-2">
+              <Button variant="primary">Primary Button</Button>
+              <Button variant="outline">Outline Button</Button>
+              <Button variant="ghost">Ghost Button</Button>
+              <Button variant="light">Light Button</Button>
+              <Button variant="dark">Dark Button</Button>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <Button variant="primary" disabled>
+                Disabled
+              </Button>
+              <Button variant="outline" disabled>
+                Disabled
+              </Button>
+              <Button variant="ghost" disabled>
+                Disabled
+              </Button>
+              <Button variant="light" disabled>
+                Disabled
+              </Button>
+              <Button variant="dark" disabled>
+                Disabled
+              </Button>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <Button variant="primary" isLoading>
+                Disabled
+              </Button>
+              <Button variant="outline" isLoading>
+                Disabled
+              </Button>
+              <Button variant="ghost" isLoading>
+                Disabled
+              </Button>
+              <Button variant="light" isLoading>
+                Disabled
+              </Button>
+              <Button variant="dark" isLoading>
+                Disabled
+              </Button>
             </div>
           </li>
         </ol>
