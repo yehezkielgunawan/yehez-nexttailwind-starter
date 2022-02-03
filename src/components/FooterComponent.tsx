@@ -6,7 +6,7 @@ const FooterComponent = () => {
       <a
         href="https://yehezgun.com"
         target="_blank"
-        className="font-semibold hover:cursor-ne-resize hover:underline"
+        className="cursor-newtab font-semibold hover:underline"
         rel="noreferrer"
       >
         {new Date().getFullYear()} | Yehezkiel Gunawan
