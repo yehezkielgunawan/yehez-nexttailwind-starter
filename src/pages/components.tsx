@@ -1,5 +1,6 @@
 import React from "react";
 
+import ArrowLink from "@/components/links/ArrowLink";
 import PrimaryLink from "@/components/links/PrimaryLink";
 import UnderlineLink from "@/components/links/UnderlineLink";
 import UnstyledLink from "@/components/links/UnstyledLink";
@@ -36,6 +37,25 @@ const Components = () => {
               <UnderlineLink href="https://yehezgun.com">
                 External Link
               </UnderlineLink>
+            </div>
+          </li>
+          <li className="space-y-1">
+            <h3>Arrow Link</h3>
+            <div className="flex flex-wrap gap-2">
+              <ArrowLink href="https://yehezgun.com" direction="left">
+                Direction Left
+              </ArrowLink>
+              <ArrowLink href="https://yehezgun.com" direction="right">
+                Direction Right
+              </ArrowLink>
+              <ArrowLink
+                href="https://yehezgun.com"
+                direction="right"
+                as={UnstyledLink}
+                className="inline-flex items-center"
+              >
+                Polymorphism
+              </ArrowLink>
             </div>
           </li>
         </ol>
