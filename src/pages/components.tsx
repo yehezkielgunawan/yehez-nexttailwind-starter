@@ -1,6 +1,7 @@
 import React from "react";
 
 import PrimaryLink from "@/components/links/PrimaryLink";
+import UnderlineLink from "@/components/links/UnderlineLink";
 import UnstyledLink from "@/components/links/UnstyledLink";
 import Layout from "@/layouts/Layout";
 
@@ -26,6 +27,15 @@ const Components = () => {
               <PrimaryLink href="https://yehezgun.com">
                 External link
               </PrimaryLink>
+            </div>
+          </li>
+          <li className="space-y-1">
+            <h3>Underline Link</h3>
+            <div className="flex flex-wrap gap-2">
+              <UnderlineLink href="/">Internal Link</UnderlineLink>
+              <UnderlineLink href="https://yehezgun.com">
+                External Link
+              </UnderlineLink>
             </div>
           </li>
         </ol>
