@@ -1,6 +1,7 @@
 import React from "react";
 
 import Button from "@/components/buttons/Button";
+import ButtonLink from "@/components/buttons/ButtonLink";
 import ArrowLink from "@/components/links/ArrowLink";
 import PrimaryLink from "@/components/links/PrimaryLink";
 import UnderlineLink from "@/components/links/UnderlineLink";
@@ -57,6 +58,14 @@ const Components = () => {
               >
                 Polymorphism
               </ArrowLink>
+              <ArrowLink
+                as={ButtonLink}
+                href="https://yehezgun.com"
+                direction="right"
+                variant="outline"
+              >
+                Polymorphism
+              </ArrowLink>
             </div>
           </li>
           <li className="space-y-1">
@@ -101,6 +110,26 @@ const Components = () => {
               <Button variant="dark" isLoading>
                 Disabled
               </Button>
+            </div>
+          </li>
+          <li className="space-y-1">
+            <h3>Button Link Component</h3>
+            <div className="flex flex-wrap gap-2">
+              <ButtonLink href="https://yehezgun.com" variant="primary">
+                Primary Button
+              </ButtonLink>
+              <ButtonLink href="https://yehezgun.com" variant="outline">
+                Outline Button
+              </ButtonLink>
+              <ButtonLink href="https://yehezgun.com" variant="ghost">
+                Ghost Button
+              </ButtonLink>
+              <ButtonLink href="https://yehezgun.com" variant="light">
+                Light Button
+              </ButtonLink>
+              <ButtonLink href="https://yehezgun.com" variant="dark">
+                Dark Button
+              </ButtonLink>
             </div>
           </li>
         </ol>
