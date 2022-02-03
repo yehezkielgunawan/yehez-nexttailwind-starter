@@ -2,7 +2,7 @@ import clsx from "clsx";
 import Link, { LinkProps } from "next/link";
 import React from "react";
 
-type UnstyledLinkProps = {
+export type UnstyledLinkProps = {
   href: string;
   children: React.ReactNode;
   openNewTab?: boolean;

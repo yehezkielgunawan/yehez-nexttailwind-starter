@@ -6,6 +6,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { SiNetlify, SiVercel } from "react-icons/si";
 
 import Layout from "@/layouts/Layout";
+import clsxm from "@/lib/helpers/clsxm";
 
 const Home: NextPage = () => {
   return (
@@ -13,7 +14,7 @@ const Home: NextPage = () => {
       <main className="flex flex-col gap-3">
         <h1 className="underline">Hello World!</h1>
         <p
-          className={clsx(
+          className={clsxm(
             "bg-gray-200 dark:bg-gray-700",
             "rounded-lg px-1 text-sm md:text-lg"
           )}
@@ -31,7 +32,7 @@ const Home: NextPage = () => {
         </figure>
         <div className="my-4 content-center justify-center text-center">
           <code
-            className={clsx(
+            className={clsxm(
               "bg-gray-200 dark:bg-gray-700",
               "rounded-lg text-sm md:text-lg"
             )}
@@ -40,7 +41,7 @@ const Home: NextPage = () => {
           </code>
           <h3>OR</h3>
           <code
-            className={clsx(
+            className={clsxm(
               "bg-gray-200 dark:bg-gray-700",
               "rounded-lg text-sm md:text-lg"
             )}
@@ -57,7 +58,7 @@ const Home: NextPage = () => {
         >
           <button
             type="button"
-            className={clsx(
+            className={clsxm(
               "py-2 px-4",
               "border-2 border-teal-700 dark:border-teal-400",
               "text-teal-800 dark:text-teal-300",
@@ -73,7 +74,7 @@ const Home: NextPage = () => {
         <Link href="/components" passHref>
           <button
             type="button"
-            className={clsx(
+            className={clsxm(
               "py-2 px-4",
               "border-2 border-black dark:border-white",
               "text-black dark:text-white",
