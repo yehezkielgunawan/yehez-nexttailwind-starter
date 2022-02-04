@@ -1,10 +1,10 @@
-import clsx from "clsx";
 import type { NextPage } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { AiFillGithub } from "react-icons/ai";
 import { SiNetlify, SiVercel } from "react-icons/si";
 
+import ButtonLink from "@/components/buttons/ButtonLink";
+import ArrowLink from "@/components/links/ArrowLink";
 import Layout from "@/layouts/Layout";
 import clsxm from "@/lib/helpers/clsxm";
 
@@ -51,92 +51,64 @@ const Home: NextPage = () => {
             [YOUR_APP_NAME]
           </code>
         </div>
-        <a
+        <ButtonLink
           href="https://github.com/yehezkielgunawan/yehez-nexttailwind-starter/generate"
-          target="_blank"
-          rel="noreferrer"
+          variant="outline"
+          className={clsxm(
+            "items-center justify-center rounded-md",
+            "border-2 border-teal-700 dark:border-teal-400",
+            "text-teal-800 dark:text-teal-300",
+            "font-semibold hover:bg-teal-200 dark:hover:bg-teal-600"
+          )}
         >
-          <button
-            type="button"
-            className={clsxm(
-              "py-2 px-4",
-              "border-2 border-teal-700 dark:border-teal-400",
-              "text-teal-800 dark:text-teal-300",
-              "hover:bg-teal-200 dark:hover:bg-teal-600",
-              "w-full transition duration-200 ease-in focus:ring-teal-500 focus:ring-offset-teal-200",
-              "text-center text-base font-semibold",
-              "rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2"
-            )}
-          >
-            Use This Template
-          </button>
-        </a>
-        <Link href="/components" passHref>
-          <button
-            type="button"
-            className={clsxm(
-              "py-2 px-4",
-              "border-2 border-black dark:border-white",
-              "text-black dark:text-white",
-              "hover:bg-gray-400 dark:hover:bg-gray-700",
-              "w-full transition duration-200 ease-in focus:ring-gray-500 focus:ring-offset-gray-200",
-              "text-center text-base font-semibold",
-              "rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2"
-            )}
-          >
-            See Components
-          </button>
-        </Link>
+          Use This Template
+        </ButtonLink>
+        <ArrowLink
+          as={ButtonLink}
+          direction="right"
+          href="/components"
+          variant="outline"
+          className={clsxm(
+            "items-center justify-center rounded-md border-2 shadow-md",
+            "border-gray-400 text-gray-500 dark:border-gray-300 dark:text-white",
+            "hover:bg-gray-200 dark:hover:bg-gray-500"
+          )}
+        >
+          See Components
+        </ArrowLink>
+
         <div className="flex flex-wrap items-center justify-center gap-3">
-          <a
+          <ButtonLink
             href="https://github.com/yehezkielgunawan/yehez-nexttailwind-starter"
-            target="_blank"
-            rel="noreferrer"
+            className={clsxm(
+              "rounded-lg ",
+              "bg-gray-700",
+              "hover:bg-gray-400",
+              "border-0"
+            )}
           >
-            <button
-              className={clsx(
-                "flex items-center justify-center",
-                "bg-gray-200 text-lg dark:bg-gray-700 md:text-xl",
-                "rounded-lg p-1 font-semibold md:p-2.5",
-                "hover:bg-gray-100 dark:hover:bg-gray-500"
-              )}
-            >
-              <AiFillGithub size={20} className="mr-1" />
-              Open In Github
-            </button>
-          </a>
-          <a
+            <AiFillGithub size={20} className="mr-1" /> Open in Github
+          </ButtonLink>
+          <ButtonLink
             href="https://vercel.com/import/git?s=https://github.com/yehezkielgunawan/yehez-nexttailwind-starter"
-            target="_blank"
-            rel="noreferrer"
+            className={clsxm(
+              "rounded-lg bg-blue-600 hover:bg-blue-400",
+              "border-0"
+            )}
           >
-            <button
-              className={clsx(
-                "flex items-center justify-center  bg-blue-600",
-                "rounded-lg font-semibold hover:bg-blue-400",
-                "p-1 text-lg text-white md:p-2.5 md:text-xl"
-              )}
-            >
-              <SiVercel size={20} className="mr-1" />
-              Deploy To Vercel
-            </button>
-          </a>
-          <a
+            <SiVercel size={20} className="mr-1" />
+            Deploy To Vercel
+          </ButtonLink>
+          <ButtonLink
             href="https://app.netlify.com/start/deploy?repository=https://github.com/yehezkielgunawan/yehez-nexttailwind-starter"
-            target="_blank"
-            rel="noreferrer"
+            className={clsxm(
+              "rounded-lg bg-sky-600 hover:bg-sky-400",
+              "border-0"
+            )}
           >
-            <button
-              className={clsx(
-                "flex items-center justify-center  bg-sky-600",
-                "rounded-lg font-semibold hover:bg-sky-400",
-                "p-1 text-lg text-white md:p-2.5 md:text-xl"
-              )}
-            >
-              <SiNetlify size={20} className="mr-1" />
-              Deploy To Netlify
-            </button>
-          </a>
+            <SiNetlify size={20} className="mr-1" />
+            Deploy To Netlifly
+          </ButtonLink>
         </div>
       </main>
     </Layout>
