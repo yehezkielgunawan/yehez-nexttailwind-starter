@@ -2,6 +2,9 @@ import React from "react";
 
 import Button from "@/components/buttons/Button";
 import ButtonLink from "@/components/buttons/ButtonLink";
+import UnstyledInput from "@/components/forms/UnstyledInput";
+import UnstyledSelect from "@/components/forms/UnstyledSelect";
+import UnstyledTextArea from "@/components/forms/UnstyledTextArea";
 import ArrowLink from "@/components/links/ArrowLink";
 import PrimaryLink from "@/components/links/PrimaryLink";
 import UnderlineLink from "@/components/links/UnderlineLink";
@@ -10,6 +13,13 @@ import NextImage from "@/components/NextImage";
 import Layout from "@/layouts/Layout";
 
 const Components = () => {
+  const optionListValuesExample = [
+    "Corporate Event",
+    "Wedding",
+    "Birthday Party",
+    "Other",
+  ];
+
   return (
     <Layout>
       <main className="min-h-screen py-10">
@@ -146,6 +156,37 @@ const Components = () => {
               height={140}
               alt="Icon example"
             />
+          </li>
+          <li className="space-y-1">
+            <h3>Tailwind CSS Form Component</h3>
+            <p>Built-in standard form using tailwindcss/forms plugin.</p>
+            <div className="py-1">
+              <h4>Unstyled</h4>
+              <p className="mt-2 text-lg">
+                This is how form elements look out of the box.
+              </p>
+              <div className="mt-4 max-w-md">
+                <div className="flex flex-col gap-4">
+                  <UnstyledInput labelName="Full Name" type="text" />
+                  <UnstyledInput
+                    labelName="Email address"
+                    placeholder="john@gmail.com"
+                    type="email"
+                  />
+                  <UnstyledInput labelName="When is your event?" type="date" />
+                  <UnstyledSelect
+                    labelName="What type of event is it?"
+                    optionList={optionListValuesExample}
+                  />
+                  <UnstyledTextArea labelName="Additional Details" />
+
+                  <UnstyledInput
+                    type="checkbox"
+                    labelName="Email me news and special offers"
+                  />
+                </div>
+              </div>
+            </div>
           </li>
         </ol>
       </main>
