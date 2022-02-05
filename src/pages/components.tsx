@@ -6,6 +6,7 @@ import ArrowLink from "@/components/links/ArrowLink";
 import PrimaryLink from "@/components/links/PrimaryLink";
 import UnderlineLink from "@/components/links/UnderlineLink";
 import UnstyledLink from "@/components/links/UnstyledLink";
+import NextImage from "@/components/NextImage";
 import Layout from "@/layouts/Layout";
 
 const Components = () => {
@@ -134,6 +135,17 @@ const Components = () => {
                 Dark Button
               </ButtonLink>
             </div>
+          </li>
+          <li className="space-y-1">
+            <h3>NextImage</h3>
+            <NextImage
+              useSkeleton
+              className="w-32 md:w-40"
+              src="https://assets.vercel.com/image/upload/v1607554385/repositories/next-js/next-logo.png"
+              width={140}
+              height={140}
+              alt="Icon example"
+            />
           </li>
         </ol>
       </main>
