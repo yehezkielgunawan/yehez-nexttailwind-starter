@@ -18,14 +18,16 @@ const HeaderComponent = () => {
   if (!mounted) return null;
 
   return (
-    <header className="fixed top-0 z-50 w-full bg-white p-0.5 opacity-90 dark:bg-gray-800">
+    <header className="fixed top-0 z-50 w-full bg-white p-0.5 opacity-90 dark:bg-gray-700">
       <div
         className={clsx(
           "layout flex items-center justify-between",
           "mx-auto h-14 max-w-4xl px-2 md:px-1"
         )}
       >
-        <h5 className="font-bold text-black dark:text-white">yehez-nexttailwind-starter</h5>
+        <h5 className="font-bold text-black dark:text-white">
+          yehez-nexttailwind-starter
+        </h5>
         <button
           className={clsx(
             "rounded-md p-2.5 focus:outline-none",
