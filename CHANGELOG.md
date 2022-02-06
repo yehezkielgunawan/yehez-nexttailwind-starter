@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/yehezkielgunawan/yehez-nexttailwind-starter/compare/v0.0.1...v0.0.2) (2022-02-06)
+
+
+### Features
+
+* **package.json:** :heavy_plus_sign: add stantard-version to generate changelog ([6f66485](https://github.com/yehezkielgunawan/yehez-nexttailwind-starter/commit/6f664856e9f391f832270340cc77f57654a67aaa))
+
 ### 0.0.1 (2022-02-06)
 
 
