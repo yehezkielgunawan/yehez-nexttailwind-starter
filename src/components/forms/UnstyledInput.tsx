@@ -5,10 +5,11 @@ import clsxm from "@/lib/helpers/clsxm";
 export type UnstyledInputProps = {
   className?: string;
   labelName?: string;
+  helperText?: string;
 } & React.ComponentPropsWithRef<"input">;
 
 const UnstyledInput = React.forwardRef<HTMLInputElement, UnstyledInputProps>(
-  ({ labelName, className, ...rest }, ref) => {
+  ({ labelName, className, helperText, ...rest }, ref) => {
     if (labelName) {
       if (rest.type === "checkbox") {
         return (
@@ -28,9 +29,15 @@ const UnstyledInput = React.forwardRef<HTMLInputElement, UnstyledInputProps>(
           <span className="text-gray-700 dark:text-gray-100">{labelName}</span>
           <input
             ref={ref}
-            className={clsxm("mt-1 block w-full dark:bg-slate-600 dark:placeholder:text-gray-400", className)}
+            className={clsxm(
+              "mt-1 block w-full dark:bg-slate-600 dark:placeholder:text-gray-400",
+              className
+            )}
             {...rest}
           />
+          {helperText && (
+            <span className="text-sm text-zinc-400">{helperText}</span>
+          )}
         </label>
       );
     }

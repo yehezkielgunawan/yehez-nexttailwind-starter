@@ -167,7 +167,11 @@ const Components = () => {
               </p>
               <div className="mt-4 max-w-md">
                 <div className="flex flex-col gap-4">
-                  <UnstyledInput labelName="Full Name" type="text" />
+                  <UnstyledInput
+                    labelName="Full Name"
+                    type="text"
+                    helperText="With Helper Text Example"
+                  />
                   <UnstyledInput
                     labelName="Email address"
                     placeholder="john@gmail.com"
@@ -177,8 +181,12 @@ const Components = () => {
                   <UnstyledSelect
                     labelName="What type of event is it?"
                     optionList={optionListValuesExample}
+                    helperText="With Helper Text"
                   />
-                  <UnstyledTextArea labelName="Additional Details" />
+                  <UnstyledTextArea
+                    labelName="Additional Details"
+                    helperText="With Helper Text"
+                  />
 
                   <UnstyledInput
                     type="checkbox"

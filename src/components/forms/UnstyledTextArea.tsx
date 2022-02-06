@@ -5,12 +5,13 @@ import clsxm from "@/lib/helpers/clsxm";
 export type UnstyledTextAreaProps = {
   className?: string;
   labelName?: string;
+  helperText?: string;
 } & React.ComponentPropsWithRef<"textarea">;
 
 const UnstyledTextArea = React.forwardRef<
   HTMLTextAreaElement,
   UnstyledTextAreaProps
->(({ labelName, className, ...rest }, ref) => {
+>(({ labelName, className, helperText, ...rest }, ref) => {
   if (labelName) {
     return (
       <label className="block">
@@ -21,6 +22,9 @@ const UnstyledTextArea = React.forwardRef<
           rows={3}
           {...rest}
         ></textarea>
+        {helperText && (
+          <span className="text-sm text-zinc-400">{helperText}</span>
+        )}
       </label>
     );
   }
