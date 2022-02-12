@@ -13,7 +13,7 @@ const defaultSEOConfig = {
     type: "website",
     images: [
       {
-        url: "https://yehez-og-image.yehezgun.com/Yehez-NextTailwind-Starter.png?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Fres.cloudinary.com%2Fyehez%2Fimage%2Fupload%2Fv1636202181%2Fpeep_amkhuu.svg&widths=250&heights=250",
+        url: "https://og.yehezgun.com/api/base?description=A%20personalized%20Next.js%20%2B%20TS%20%2B%20Tailwind%20CSS%20starter%20template%20by%20Yehezkiel%20Gunawan&siteName=nexttw-starter.yehezgun.com&templateTitle=Next.js%20%2B%20TS%20%2BTailwind%20Starter%20Template&theme=dark",
         alt: "yehez-nexttailwind-starter.yehezgun.com og-image",
         width: 800,
         height: 600,
