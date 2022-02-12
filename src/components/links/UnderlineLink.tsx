@@ -11,9 +11,9 @@ const UnderlineLink = React.forwardRef<HTMLAnchorElement, UnstyledLinkProps>(
         ref={ref}
         {...rest}
         className={clsxm(
+          "link-underline",
           "border-b border-dotted",
-          "border-dark hover:border-black/0 dark:border-white dark:hover:border-white/0",
-          "inline-flex items-center hover:border-2 hover:border-solid hover:border-b-primary-500 dark:hover:border-b-primary-400",
+          "inline-flex items-center",
           "focus-visible:dashed focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-offset-2",
           className
         )}
