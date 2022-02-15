@@ -15,7 +15,8 @@ const Home: NextPage = () => {
         <h1 className="underline">Hello World!</h1>
         <p
           className={clsxm(
-            "bg-gray-200 dark:bg-gray-700",
+            "bg-gray-200",
+            "dark:bg-gray-700",
             "rounded-lg px-1 text-sm md:text-lg"
           )}
         >

@@ -38,4 +38,6 @@ const UnstyledTextArea = React.forwardRef<
   );
 });
 
+UnstyledTextArea.displayName = "UnstyledTextArea";
+
 export default UnstyledTextArea;

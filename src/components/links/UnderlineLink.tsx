@@ -24,4 +24,6 @@ const UnderlineLink = React.forwardRef<HTMLAnchorElement, UnstyledLinkProps>(
   }
 );
 
+UnderlineLink.displayName = "UnderlineLink";
+
 export default UnderlineLink;
