@@ -14,6 +14,7 @@ But if you also find this template is useful, you also can use it. And of course
 
 - Toolings for linting, formatting, and conventions configured.
   `eslint`, `prettier`, `husky`, & `lint-staged.`
+- The ESLint config is bundled in [`eslint-config-yehezgun`](https://www.npmjs.com/package/eslint-config-yehezgun)
 - ✨Basic responsive layout configuration (using Chakra UI media query)
 - 📜Basic `standard-version` to generate Changelog, you can run `npx standard-version --skip.bump --skip.commit --skip.tag`
 - SEO Optimization (using next-SEO)
