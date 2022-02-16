@@ -44,10 +44,10 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "eslint --fix --max-warnings=0",
-      "npx prettier --write src"
+      "prettier --write src/"
     ],
     "*.{json,css,scss,md}": [
-      "npx prettier --write src"
+      "prettier --write src/"
     ]
   }
 }
