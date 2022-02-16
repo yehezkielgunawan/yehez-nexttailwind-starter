@@ -3,6 +3,7 @@ import { DefaultSeo } from "next-seo";
 import { ThemeProvider } from "next-themes";
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import "@fontsource/catamaran";
 
 import defaultSEOConfig from "../../next-seo.config";
 
