@@ -1,8 +1,6 @@
 /** @type {import('next-seo').DefaultSeoProps} */
 const defaultSEOConfig = {
-  title: "yehez-nexttailwind-starter",
-  titleTemplate: "%s | yehez-nexttailwind-starter",
-  defaultTitle: "yehez-nexttailwind-starter",
+  defaultTitle: "yehez-nexttw-starter",
   description:
     "Yehezkiel Gunawan's personalized Next.js + Tailwind CSS + TypeScript starter template",
   canonical: "https://yehez-nexttailwind-starter.yehezgun.com",
