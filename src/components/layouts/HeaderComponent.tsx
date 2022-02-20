@@ -5,7 +5,7 @@ import { BiMoon, BiSun } from "react-icons/bi";
 
 import clsxm from "@/lib/helpers/clsxm";
 
-import Button from "./buttons/Button";
+import Button from "../buttons/Button";
 
 const HeaderComponent = () => {
   const { resolvedTheme, setTheme } = useTheme();

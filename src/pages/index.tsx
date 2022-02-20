@@ -4,8 +4,8 @@ import { AiFillGithub } from "react-icons/ai";
 import { SiNetlify, SiVercel } from "react-icons/si";
 
 import ButtonLink from "@/components/buttons/ButtonLink";
+import Layout from "@/components/layouts/Layout";
 import ArrowLink from "@/components/links/ArrowLink";
-import Layout from "@/layouts/Layout";
 import clsxm from "@/lib/helpers/clsxm";
 
 const Home: NextPage = () => {
