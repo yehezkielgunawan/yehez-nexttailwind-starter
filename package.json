@@ -11,7 +11,7 @@
     "release": "standard-version"
   },
   "dependencies": {
-    "@fontsource/catamaran": "^4.5.3",
+    "@fontsource/catamaran": "^4.5.5",
     "@tailwindcss/forms": "^0.4.0",
     "@typescript-eslint/eslint-plugin": "^5.13.0",
     "clsx": "^1.1.1",
