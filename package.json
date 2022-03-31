@@ -17,7 +17,7 @@
     "next": "^12.1.4",
     "next-seo": "^4.29.0",
     "next-themes": "^0.0.15",
-    "prettier": "^2.5.1",
+    "prettier": "2.6.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-icons": "^4.3.1",
