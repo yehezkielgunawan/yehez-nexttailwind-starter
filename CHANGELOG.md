@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/yehezkielgunawan/yehez-nexttailwind-starter/compare/v0.0.2...v0.0.3) (2022-03-31)
+
+### Bug Fixes
+
+- **Button, Form, and Link Components:** :rotating_light: fix codes based on linter rules ([8e53666](https://github.com/yehezkielgunawan/yehez-nexttailwind-starter/commit/8e53666ffbd7d95474e000e91cb32f03fb7af24c))
+
 ### [0.0.2](https://github.com/yehezkielgunawan/yehez-nexttailwind-starter/compare/v0.0.1...v0.0.2) (2022-02-06)
 
 ### Features
