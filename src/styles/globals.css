@@ -64,7 +64,6 @@
   }
 
   .layout-container {
-    max-width: 64rem;
     @apply mx-auto max-w-4xl px-2 pt-20 md:px-1;
   }
 
