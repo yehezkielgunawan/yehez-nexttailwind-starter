@@ -2,12 +2,13 @@ import React from "react";
 
 import Button from "@/components/buttons/Button";
 import ButtonLink from "@/components/buttons/ButtonLink";
+import BaseImage from "@/components/images/BaseImage";
+import NextImage from "@/components/images/NextImage";
 import Layout from "@/components/layouts/Layout";
 import ArrowLink from "@/components/links/ArrowLink";
 import PrimaryLink from "@/components/links/PrimaryLink";
 import UnderlineLink from "@/components/links/UnderlineLink";
 import UnstyledLink from "@/components/links/UnstyledLink";
-import NextImage from "@/components/NextImage";
 
 const Components = () => {
   return (
@@ -145,6 +146,17 @@ const Components = () => {
               width={140}
               height={140}
               alt="Icon example"
+            />
+          </li>
+          <li className="space-y-1">
+            <h3>BaseImage (using base HTML img and figure tag)</h3>
+            <BaseImage
+              alt="sample-icon"
+              className="w-32 md:w-40"
+              src="https://assets.vercel.com/image/upload/v1607554385/repositories/next-js/next-logo.png"
+              loading="lazy"
+              decoding="async"
+              useSkeleton
             />
           </li>
         </ol>

@@ -3,9 +3,9 @@ import { useTheme } from "next-themes";
 import React from "react";
 import { BiMoon, BiSun } from "react-icons/bi";
 
-import clsxm from "@/lib/helpers/clsxm";
-
 import Button from "../buttons/Button";
+
+import clsxm from "@/lib/helpers/clsxm";
 
 const HeaderComponent = () => {
   const { resolvedTheme, setTheme } = useTheme();
@@ -18,8 +18,8 @@ const HeaderComponent = () => {
     <header className="fixed top-0 z-50 w-full bg-white p-0.5 opacity-90 dark:bg-gray-700">
       <div
         className={clsx(
-          "layout flex items-center justify-between",
-          "mx-auto h-14 max-w-4xl px-2 md:px-1"
+          "flex items-center justify-between",
+          "mx-auto h-14 max-w-5xl px-2 md:px-1"
         )}
       >
         <h5 className="font-bold text-black dark:text-white">
