@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "release": "standard-version"
+    "release": "standard-version",
+    "test": "jest"
   },
   "dependencies": {
     "@fontsource/catamaran": "^4.5.6",
@@ -25,6 +26,8 @@
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
     "@types/node": "17.0.4",
     "@types/react": "^18.0.5",
     "autoprefixer": "^10.4.4",
@@ -32,6 +35,8 @@
     "eslint-config-next": "^12.1.5",
     "eslint-config-yehezgun": "^1.2.2",
     "husky": "^7.0.0",
+    "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
     "lint-staged": "^12.3.4",
     "postcss": "^8.4.8",
     "prettier": "^2.5.1",
