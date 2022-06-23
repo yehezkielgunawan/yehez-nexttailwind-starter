@@ -1,8 +1,8 @@
 import React from "react";
 
-import clsxm from "@/lib/helpers/clsxm";
-
 import UnstyledLink, { UnstyledLinkProps } from "../links/UnstyledLink";
+
+import clsxm from "@/lib/helpers/clsxm";
 
 enum ButtonVariant {
   "primary",
@@ -68,7 +68,5 @@ const ButtonLink = React.forwardRef<HTMLAnchorElement, ButtonLinkProps>(
     );
   }
 );
-
-ButtonLink.displayName = "ButtonLink";
 
 export default ButtonLink;

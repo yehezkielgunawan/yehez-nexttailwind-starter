@@ -26,6 +26,4 @@ const BaseImage = React.forwardRef<HTMLImageElement, BaseImageProps>(
   }
 );
 
-BaseImage.displayName = "BaseImage";
-
 export default BaseImage;
