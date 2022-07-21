@@ -23,7 +23,7 @@ const Home: NextPage = () => {
           This is just a starter template, made using Next.js + Typescript +
           Tailwind CSS.
         </p>
-        <figure className="my-4 flex animate-spin content-center justify-center py-3">
+        <figure className="my-4 flex content-center justify-center py-3 motion-safe:animate-bounce">
           <Image
             src="https://assets.vercel.com/image/upload/v1607554385/repositories/next-js/next-logo.png"
             alt="Next.jsLogo"
@@ -85,29 +85,32 @@ const Home: NextPage = () => {
               "rounded-lg ",
               "bg-gray-700",
               "hover:bg-gray-400",
-              "border-0"
+              "border-0",
+              "gap-2"
             )}
           >
-            <AiFillGithub size={20} className="mr-1" /> Open in Github
+            <AiFillGithub size={20} /> Open in Github
           </ButtonLink>
           <ButtonLink
             href="https://vercel.com/import/git?s=https://github.com/yehezkielgunawan/yehez-nexttailwind-starter"
             className={clsxm(
               "rounded-lg bg-blue-600 hover:bg-blue-400",
-              "border-0"
+              "border-0",
+              "gap-2"
             )}
           >
-            <SiVercel size={20} className="mr-1" />
+            <SiVercel size={20} />
             Deploy To Vercel
           </ButtonLink>
           <ButtonLink
             href="https://app.netlify.com/start/deploy?repository=https://github.com/yehezkielgunawan/yehez-nexttailwind-starter"
             className={clsxm(
               "rounded-lg bg-sky-600 hover:bg-sky-400",
-              "border-0"
+              "border-0",
+              "gap-2"
             )}
           >
-            <SiNetlify size={20} className="mr-1" />
+            <SiNetlify size={20} />
             Deploy To Netlifly
           </ButtonLink>
         </div>
