@@ -140,7 +140,6 @@ const Components = () => {
           <li className="space-y-1">
             <h3>NextImage</h3>
             <NextImage
-              useSkeleton
               className="w-32 md:w-40"
               src="https://assets.vercel.com/image/upload/v1607554385/repositories/next-js/next-logo.png"
               width={140}
@@ -156,7 +155,6 @@ const Components = () => {
               src="https://assets.vercel.com/image/upload/v1607554385/repositories/next-js/next-logo.png"
               loading="lazy"
               decoding="async"
-              useSkeleton
             />
           </li>
         </ol>
