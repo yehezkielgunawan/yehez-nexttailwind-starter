@@ -3,25 +3,26 @@ import React, { useState } from "react";
 import clsxm from "@/lib/helpers/clsxm";
 
 type BaseImageProps = {
-  useSkeleton?: boolean;
   className?: string;
-  imgClassName?: string;
 } & React.ComponentPropsWithRef<"img">;
 
 const BaseImage = React.forwardRef<HTMLImageElement, BaseImageProps>(
-  ({ useSkeleton = false, className, imgClassName, ...rest }, ref) => {
-    const [status, setStatus] = useState<string>(
-      useSkeleton ? "loading" : "complete"
-    );
+  ({ className, ...rest }, ref) => {
+    const [status, setStatus] = useState<boolean>(false);
     return (
-      <figure ref={ref} className={clsxm(className)}>
-        <img
-          src={clsxm(imgClassName, status === "loading" && "animate-pulse")}
-          alt={rest.alt}
-          onLoad={() => setStatus("complete")}
-          {...rest}
-        />
-      </figure>
+      <img
+        ref={ref}
+        className={clsxm(
+          className,
+          "transition duration-500",
+          status ? "scale-100 blur-0" : "scale-120 blur-2xl"
+        )}
+        alt={rest.alt}
+        onLoad={() => setStatus(true)}
+        loading="lazy"
+        decoding="async"
+        {...rest}
+      />
     );
   }
 );
