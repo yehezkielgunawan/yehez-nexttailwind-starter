@@ -1,12 +1,12 @@
 /** @type {import('next-seo').DefaultSeoProps} */
 const defaultSEOConfig = {
-  defaultTitle: "yehez-nexttw-starter",
+  defaultTitle: "YehezGun's Next.js + Tailwind Starter",
   description:
     "Yehezkiel Gunawan's personalized Next.js + Tailwind CSS + TypeScript starter template",
   canonical: "https://yehez-nexttailwind-starter.yehezgun.com",
   openGraph: {
     url: "https://yehez-nexttailwind-starter.yehezgun.com",
-    title: "yehez-nexttailwind-starter",
+    title: "YehezGun's Next.js + Tailwind Starter",
     description: "Next.js + Tailwind CSS + TypeScript template",
     type: "website",
     images: [
