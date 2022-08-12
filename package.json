@@ -3,13 +3,17 @@
   "private": true,
   "version": "0.0.3",
   "scripts": {
+    "clean": "rm -rf .next coverage node_modules tsconfig.tsbuildinfo",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
     "release": "standard-version",
-    "test": "jest"
+    "test": "jest",
+    "prettier:ci": "prettier --check ./**/*.{ts,tsx}",
+    "typescript:ci": "tsc --noEmit",
+    "test:ci": "jest --ci --collect-coverage --verbose"
   },
   "dependencies": {
     "@fontsource/catamaran": "^4.5.6",
