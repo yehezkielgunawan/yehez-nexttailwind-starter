@@ -37,6 +37,8 @@ npx create-next-app --example https://github.com/yehezkielgunawan/yehez-nexttail
 
 - Then run the local server using `yarn dev` or `npm run dev`
 
+- One important thing to do is to look at unit tests and run it by using `yarn test` and/or `yarn test:ci`! This is useful when you want to try looking at the coverage and to understand the integration tests.
+
 ## References
 
 - [Tailwind CSS Official Docs](https://tailwindcss.com/)
