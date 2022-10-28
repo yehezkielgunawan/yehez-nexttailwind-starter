@@ -3,9 +3,9 @@ import { useTheme } from "next-themes";
 import React from "react";
 import { BiMoon, BiSun } from "react-icons/bi";
 
-import Button from "../buttons/Button";
-
 import clsxm from "@/lib/helpers/clsxm";
+
+import Button from "../buttons/Button";
 
 const HeaderComponent = () => {
   const { resolvedTheme, setTheme } = useTheme();

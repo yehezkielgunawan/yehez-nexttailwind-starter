@@ -41,7 +41,6 @@ export default function NextImage({
         height={height}
         alt={alt}
         onLoadingComplete={() => setStatus(true)}
-        layout="responsive"
         priority
         decoding="async"
         unoptimized

@@ -5,4 +5,7 @@ module.exports = {
     domains: ["assets.vercel.com"],
   },
   swcMinify: true,
+  eslint: {
+    dirs: ["src"],
+  },
 };
