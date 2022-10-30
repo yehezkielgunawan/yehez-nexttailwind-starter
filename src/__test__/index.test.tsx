@@ -1,12 +1,11 @@
-// __tests__/index.test.jsx
-
 import { render, screen } from "@testing-library/react";
+
+import NotFoundPage from "@/pages/404";
+import Components from "@/pages/components";
 
 import Home from "../pages/index";
 
-import NotFoundPage from "@/pages/404";
 import "@testing-library/jest-dom";
-import Components from "@/pages/components";
 
 describe("Render Page Normally", () => {
   it("Renders Home Page Successfully", () => {
