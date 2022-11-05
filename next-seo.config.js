@@ -11,7 +11,7 @@ const defaultSEOConfig = {
     type: "website",
     images: [
       {
-        url: "https://og.yehezgun.com/api/base?description=A%20personalized%20Next.js%20%2B%20TS%20%2B%20Tailwind%20CSS%20starter%20template%20by%20Yehezkiel%20Gunawan&siteName=nexttw-starter.yehezgun.com&templateTitle=Next.js%20%2B%20TS%20%2BTailwind%20Starter%20Template&theme=dark",
+        url: "https://og-v2.yehezgun.com/api/og?title=yehez-nexttailwind-starter&desc=This%20is%20a%20Next%20JS%20(Typescript)%20+%20Tailwind%20CSS%20personalized%20template&imgUrl=https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Fv1607554385%2Frepositories%2Fnext-js%2Fnext-logo.png&f=1&nofb=1&ipt=c85d3f1b169b29d5ebb3c9ca87303abdf1091ceed3998361dc23f329943e9728&ipo=images&siteName=nexttw-starter.yehezgun.com",
         alt: "yehez-nexttailwind-starter.yehezgun.com og-image",
         width: 800,
         height: 600,
