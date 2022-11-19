@@ -14,10 +14,14 @@ enum ButtonVariant {
 
 type ButtonLinkProps = {
   variant?: keyof typeof ButtonVariant;
+  block?: boolean;
 } & UnstyledLinkProps;
 
 const ButtonLink = React.forwardRef<HTMLAnchorElement, ButtonLinkProps>(
-  ({ children, className, variant = "primary", ...rest }, ref) => {
+  (
+    { children, block = false, className, variant = "primary", ...rest },
+    ref
+  ) => {
     return (
       <UnstyledLink
         ref={ref}
@@ -27,6 +31,7 @@ const ButtonLink = React.forwardRef<HTMLAnchorElement, ButtonLinkProps>(
           "focus:outline-none focus-visible:ring focus-visible:ring-primary-500",
           "shadow-sm",
           "transition-colors duration-75",
+          block && "w-full justify-center",
           //#region  //*=========== Variants ===========
           [
             variant === "primary" && [
