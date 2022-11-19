@@ -13,6 +13,7 @@ enum ButtonVariant {
 
 type ButtonProps = {
   isLoading?: boolean;
+  block?: boolean;
   variant?: keyof typeof ButtonVariant;
 } & React.ComponentPropsWithRef<"button">;
 
@@ -20,6 +21,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {
       children,
+      block = false,
       className,
       disabled: buttonDisabled,
       isLoading,
@@ -39,6 +41,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
           "focus:outline-none focus-visible:ring focus-visible:ring-primary-500",
           "shadow-sm",
           "transition duration-200 ease-in",
+          block && "w-full justify-center",
           [
             variant === "primary" && [
               "bg-primary-500 text-white",

@@ -116,6 +116,23 @@ const Components = () => {
                 Disabled
               </Button>
             </div>
+            <div className="flex flex-wrap gap-2">
+              <Button variant="primary" block>
+                Block Button
+              </Button>
+              <Button variant="outline" block>
+                Block Button
+              </Button>
+              <Button variant="ghost" block>
+                Block Button
+              </Button>
+              <Button variant="light" block>
+                Block Button
+              </Button>
+              <Button variant="dark" block>
+                Block Button
+              </Button>
+            </div>
           </li>
           <li className="space-y-1">
             <h3>Button Link Component</h3>
@@ -134,6 +151,23 @@ const Components = () => {
               </ButtonLink>
               <ButtonLink href="https://yehezgun.com" variant="dark">
                 Dark Button
+              </ButtonLink>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <ButtonLink href="https://yehezgun.com" variant="primary" block>
+                Block Button Link
+              </ButtonLink>
+              <ButtonLink href="https://yehezgun.com" variant="outline" block>
+                Block Button Link
+              </ButtonLink>
+              <ButtonLink href="https://yehezgun.com" variant="ghost" block>
+                Block Button Link
+              </ButtonLink>
+              <ButtonLink href="https://yehezgun.com" variant="light" block>
+                Block Button Link
+              </ButtonLink>
+              <ButtonLink href="https://yehezgun.com" variant="dark" block>
+                Block Button Link
               </ButtonLink>
             </div>
           </li>
