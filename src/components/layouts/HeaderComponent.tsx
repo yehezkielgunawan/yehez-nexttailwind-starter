@@ -15,7 +15,12 @@ const HeaderComponent = () => {
   };
 
   return (
-    <header className="fixed top-0 z-50 w-full bg-white p-0.5 opacity-90 dark:bg-gray-700">
+    <header
+      className={clsxm(
+        "fixed top-0 z-50 w-full bg-white/10 p-0.5",
+        "backdrop-blur-md dark:bg-gray-700/10"
+      )}
+    >
       <div
         className={clsx(
           "flex items-center justify-between",
